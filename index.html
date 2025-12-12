@@ -18,6 +18,7 @@
             min-height: 100vh;
             line-height: 1.6;
             overflow-x: hidden;
+            padding-bottom: 7rem; /* Added padding to make space for the footer */
         }
 
         /* Animated background elements */
@@ -128,7 +129,7 @@
         main {
             max-width: 900px;
             margin: 4rem auto;
-            padding: 0 2rem 6rem;
+            padding: 0 2rem;
             position: relative;
             z-index: 1;
         }
@@ -208,6 +209,7 @@
             text-align: center;
         }
 
+        /* Updated CSS for Author (Refactored) */
         .author {
             display: block;
             margin-top: 2rem;
@@ -215,12 +217,23 @@
             color: #a0a0a0;
             font-size: 1.1rem;
             text-align: right;
-            position: relative;
+        }
+        .author::before {
+            content: '— ';
+            margin-right: 0.5rem;
         }
 
-        .author::before {
-            content: '—';
-            margin-right: 0.5rem;
+        /* OLD AD BANNER STYLES - REMOVED THE HTML ELEMENT BUT KEEPING STYLES FOR REFERENCE */
+        .ad-banner {
+            /* Styles for the old placeholder ad banner */
+        }
+        
+        .ad-text-container {
+            /* Styles for the old placeholder ad banner */
+        }
+        
+        .ad-button {
+            /* Styles for the old placeholder ad banner */
         }
 
         footer {
@@ -259,7 +272,7 @@
 
             main {
                 margin: 2rem auto;
-                padding: 0 1rem 6rem;
+                padding: 0 1rem;
             }
 
             .poem-name {
@@ -298,6 +311,12 @@
             }
         }
     </style>
+
+    <script
+      type="text/javascript"
+      src="https://pl28246531.effectivegatecpm.com/09/0c/88/090c886f34a4dc5aa1fd15496dc27f2a.js"
+    ></script>
+    
 </head>
 <body>
 <header>
@@ -326,11 +345,15 @@ Dazzling light delight, is you
 The lullaby that soothes my restless mind
 You are all I want 
 For you are my only light in the dark
-I am your hero, my Heroine.<span class="author">NeK The Poet</span></pre>
+I am your hero, my Heroine.</pre>
+        <span class="author">NeK The Poet</span>
     </div>
 </main>
+
+
 <footer>
     <p>&copy; 2025 Poetry ZM | Zambia's Premier Poetry Platform | All Rights Reserved</p>
 </footer>
 </body>
-</html>
+    </html>
+    
