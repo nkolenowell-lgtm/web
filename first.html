@@ -3,35 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>myApp - log in or sign up</title>
+    <title>myApp - Log In</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section>
-            <h1 id="title">myApp</h1>
-        
-      <div class="log">   
-    
-        <form action="server.php" method="post">
-            
-            <label for="username"></label>
-            <input type="text" id="username" name="username" placeholder="Email or phone number">
-            <br>
-            <label for="password"></label>
-            <input type="password" id="password" name="password" placeholder="Password">
-            <br>
-            <button id="login" type="submit" onclick="window.location.href='index.html';">Log In</button>
-            <br>
-            <a id="forgot" href="#">Forgot Password?</a>
-            <hr>
-            <button id="new" type="button" onclick="window.location.href='register.html';">
-    Create New Account
-</button>
-        </form>
-    </div>
-    </section>
-    
+        <h1 id="title">myApp</h1>
 
+        <div class="log">   
+            <form id="loginForm">
+                <label for="username"></label>
+                <input type="text" id="username" name="username" placeholder="Email or phone number">
+                <br>
+                <label for="password"></label>
+                <input type="password" id="password" name="password" placeholder="Password">
+                <br>
+                <button id="login" type="submit">Log In</button>
+                <br>
+                <a id="forgot" href="#">Forgot Password?</a>
+                <hr>
+                <button id="new" type="button">Create New Account</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        // Redirect login to index.html
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // prevent actual form submission
+            window.location.href = "index.html"; // landing page
+        });
+
+        // Redirect create account to register.html
+        document.getElementById('new').addEventListener('click', function() {
+            window.location.href = "register.html";
+        });
+    </script>
 </body>
 </html>
