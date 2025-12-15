@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Poetry ZM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main style="height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center;">
+    <button id="logoutBtn" 
+        style="padding: 1rem 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border: none; border-radius: 30px; color: white; font-weight: 500; cursor: pointer;">
+        Log Out
+    </button>
+</main>
+
+<script>
+    document.getElementById('logoutBtn').addEventListener('click', function() {
+        window.location.href = "first.html"; // redirect to first page
+    });
+</script>
+
+</body>
+</html>
